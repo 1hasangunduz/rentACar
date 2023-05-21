@@ -7,8 +7,6 @@ import java.util.List;
 
 public interface BrandRepository extends JpaRepository<Brand,Integer> { //BrandRepository ya da BrandDao olabilir.
 
-   List<Brand> getAll();
-
 }
 
 
