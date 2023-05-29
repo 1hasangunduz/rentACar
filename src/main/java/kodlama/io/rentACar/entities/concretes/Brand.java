@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor //parametresiz constructor oluşturur.
 public class Brand {
 
-    @Id
+    @Id //id verir uniqe olarak , alttaki anotation da otomatik verir.
     @GeneratedValue(strategy = GenerationType.IDENTITY) //id otomatik artan bir değer olacak.
     @Column(name="id") //id kolonu brands tablosunda id kolonu ile eş değer.
     private int id;
