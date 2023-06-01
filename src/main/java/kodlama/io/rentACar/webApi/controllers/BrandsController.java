@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@AllArgsConstructor
 @RequestMapping("/api/brands") //tarayicidaki adreslemedeki gördüğümüz uzanti.
+@AllArgsConstructor
 public class BrandsController {
 
     private final BrandService brandService;
