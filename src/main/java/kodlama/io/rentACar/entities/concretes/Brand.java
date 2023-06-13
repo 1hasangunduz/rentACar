@@ -1,15 +1,14 @@
 package kodlama.io.rentACar.entities.concretes;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Entity //sen bir DB varlığısın , table olarak brands'e eş değersin . Senin getter setterların contructorların var demek.
 @Table(name="brands") //brands table olduğunu belirttik.
-@Data
+@Getter
+@Setter
 @AllArgsConstructor //bizim icin parametreli constructor olusturur.
 @NoArgsConstructor //parametresiz constructor oluşturur.
+@Entity //sen bir DB varlığısın , table olarak brands'e eş değersin . Senin getter setterların contructorların var demek.
 public class Brand {
 
     @Id //id verir uniqe olarak , alttaki anotation da otomatik verir.

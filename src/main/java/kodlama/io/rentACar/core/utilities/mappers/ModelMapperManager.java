@@ -16,7 +16,7 @@ public class ModelMapperManager implements ModelMapperService {
         this.modelMapper.getConfiguration()
                 .setAmbiguityIgnored(true) // Belirsizlikleri yoksay, belirsizlik varsa ignore et
                 .setMatchingStrategy(MatchingStrategies.LOOSE); //Belirli alanları maple
-        return null;
+        return this.modelMapper;
     }
 
     @Override
@@ -24,6 +24,6 @@ public class ModelMapperManager implements ModelMapperService {
         this.modelMapper.getConfiguration()
                 .setAmbiguityIgnored(true)
                 .setMatchingStrategy(MatchingStrategies.STANDARD); // her şey maplensin
-        return null;
+        return this.modelMapper;
     }
 }
