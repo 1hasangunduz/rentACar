@@ -1,11 +1,3 @@
-<h1 align="left">💻 It was built using the following technologies:</h1>
-
-###
-
-<h3 align="left">Java<br>Spring Boot <br>N-Tier Architecture <br>Maven <br>ModelMapper <br>Global Exception Handling<br>AOP<br>PostgreSQL <br>JPA/Hibernate<br>Lombok <br>Swagger</h3>
-
-###
-
 <!DOCTYPE html>
 <html>
 
@@ -15,6 +7,13 @@
 
 <body>
     <h1>Rent-A-Car Projesi</h1>
+    <h2 align="left">💻 It was built using the following technologies:</h1>
+
+###
+
+<h3 align="left">Java<br>Spring Boot <br>N-Tier Architecture <br>Maven <br>ModelMapper <br>Global Exception Handling<br>AOP<br>PostgreSQL <br>JPA/Hibernate<br>Lombok <br>Swagger</h3>
+
+###
     <p>Rent-A-Car, araç kiralama işlemlerini kolaylaştırmak için geliştirilen bir web uygulamasıdır. Kullanıcılar, bu platform
         üzerinden araçları listeleyebilir, kiralayabilir ve kiraladıkları araçların yönetimini gerçekleştirebilirler.</p>
 
