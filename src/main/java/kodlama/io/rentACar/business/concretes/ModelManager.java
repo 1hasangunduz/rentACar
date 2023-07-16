@@ -1,6 +1,7 @@
 package kodlama.io.rentACar.business.concretes;
 
 import kodlama.io.rentACar.business.abstracts.ModelService;
+import kodlama.io.rentACar.business.requests.CreateModelRequest;
 import kodlama.io.rentACar.business.responses.GetAllModelsResponse;
 import kodlama.io.rentACar.core.utilities.mappers.ModelMapperService;
 import kodlama.io.rentACar.dataAccess.abstracts.ModelRepositroy;
@@ -25,6 +26,13 @@ public class ModelManager implements ModelService {
         return models.stream()
                 .map(model -> this.modelMapperService.forResponse()
                         .map(model, GetAllModelsResponse.class)).toList();
-
     }
+
+    @Override
+    public void add(CreateModelRequest createModelRequest) { //CreateModelRequest ile gelen verileri Model'e çevirip veritabanına kaydediyoruz.
+        Model model = this.modelMapperService.forRequest().map(createModelRequest, Model.class); //map metodu ile createModelRequest'i Model'e çeviriyoruz.
+        this.modelRepositroy.save(model); //save metodu ile veritabanına kaydediyoruz.
+    }
+
+
 }

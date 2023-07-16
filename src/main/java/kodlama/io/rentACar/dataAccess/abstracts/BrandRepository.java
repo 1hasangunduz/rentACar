@@ -7,6 +7,8 @@ import java.util.List;
 
 public interface BrandRepository extends JpaRepository<Brand,Integer> { //BrandRepository ya da BrandDao olabilir.
 
+    //TODO : //spring jpa keywords araştırılacak.
+    boolean existsByName(String name);
 }
 
 
