@@ -34,7 +34,6 @@ public class ModelManager implements ModelService {
         this.modelRepositroy.save(model); //save metodu ile veritabanına kaydediyoruz.
     }
 
-
 }
 
 
