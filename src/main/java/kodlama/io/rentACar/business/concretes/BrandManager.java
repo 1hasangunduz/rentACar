@@ -55,6 +55,7 @@ public class BrandManager implements BrandService {
         return this.modelMapperService.forResponse().map(brand, GetByIdBrandResponse.class);
     }
 
+
     @Override
     public void add(CreateBrandRequest createBrandRequest) {
         this.brandBusinessRules.checkIfBrandNameExists(createBrandRequest.getName());   //Business kurallarını yazıcaz ,Diğer kurallar altına eklenebilir.
