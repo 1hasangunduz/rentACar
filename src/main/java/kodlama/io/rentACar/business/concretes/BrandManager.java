@@ -74,4 +74,5 @@ public class BrandManager implements BrandService {
 
         this.brandRepository.deleteById(id);
     }
+
 }
